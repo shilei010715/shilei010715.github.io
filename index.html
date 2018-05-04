@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微票儿</title>
+
+
+
+    <style>
+        .navbar-brand{
+            margin-left: 15px;
+        }
+        #myCarousel{
+            margin: 20px;
+        }
+        #onerowcolumn{
+            margin: 20px;
+        }
+        .container{
+
+            margin-top: 30px;
+        }
+        ul li{
+            list-style:none;
+        }
+
+        #tworowcol{
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+<!--顶部导航部分-->
+<nav class="nav navbar-inverse">
+    <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse"
+                data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+        </button>
+        <img src="image/logoMsg.png" class="navbar-brand">
+
+    </div>
+    <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+
+        </ul>
+    </div>
+    <div class="collapse navbar-collapse navbar-right">
+        <form class="navbar-form navbar-right" role="search">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="请输入要搜索的内容">
+            </div>
+            <button type="submit" class="btn btn-default">搜索</button>
+
+        </form>
+
+
+    </div>
+    <div class="collapse navbar-collapse navbar-left">
+        <ul class="nav navbar-nav">
+            <li><a href="#" class="active">全国</a></li>
+            <li><a href="#">演出</a></li>
+            <li><a href="#">电影</a></li>
+            <li><a href="#">我的微票儿<span style="margin-left: 6px;" class="label label-danger">new</span></a></li>
+        </ul>
+    </div>
+</nav>
+<!--第一行微票儿轮播图和特惠看部分-->
+
+<div class="row" style="background-color: #CD5945" id="onerow">
+    <div class="col-md-8 col-xs-12">
+        <div id="myCarousel" class="carousel slide">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" >
+                <div class="item active" style="margin-left: 120px">
+                    <img src="image/1.jpg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="image/2.jpg">
+                    <div class="carousel-caption"></div>
+                </div>
+                <div class="item">
+                    <img src="image/3.jpg">
+                    <div class="carousel-caption"></div>
+                </div>
+            </div>
+            <a class="carousel-control leftt" href="#myCarousel"
+               data-slide="prev"></a>
+            <a class="carousel-control rightt" href="#myCarousel"
+               data-slide="next"></a>
+        </div>
+    </div>
+    <div class="col-md-3 col-md-offset-1 col-xs-12" style="background-color: white" id="onerowcolumn">
+        <h4>特惠看</h4>
+        <img src="image/img1.jpg">
+        <p>[苏州]2016迷笛电子音乐节(预售)</p>
+        <p>穿着花裤子喝着小酒通宵达旦</p>
+        <p>------------------------------</p>
+        <p>2016刘若英世界巡回演唱会</p>
+        <p>[上海]百老汇经典音乐剧--《狮子王》</p>
+    </div>
+</div>
+<div class="container">
+    <!--第二行左边一个大概占8份的演出和右侧的选项卡-->
+    <div class="row">
+        <div class="col-md-2 col-xs-6">
+            <img src="image/5.jpg" class="img-responsive">
+            <p>[上海]百老汇经典音乐剧--《狮子王》</p>
+        </div>
+        <div class="col-md-2 col-xs-6">
+            <img src="image/6.jpg" class="img-responsive">
+            <p>[北京]陈奕迅 ANOTHER EASON'S LIFE演唱会北京站</p>
+        </div>
+        <div class="col-md-2 col-xs-6">
+            <img src="image/7.jpg" class="img-responsive">
+            <p>[深圳]逃跑计划2016巡回演唱会深圳站</p>
+        </div>
+        <div class="col-md-2 col-xs-6">
+            <img src="image/8.jpg" class="img-responsive">
+            <p>[北京]BJCC北京漫控潮流博览会[北京]BJCC北京漫控潮流博览会</p>
+        </div>
+
+        <div class="col-md-3 col-xs-12">
+            <ul id="myTab" class="nav nav-tabs">
+                <li class="active"><a href="#news" data-toggle="tab" id="one">
+                    首页</a>
+                </li>
+                <li><a href="#play" data-toggle="tab">技能课</a></li>
+
+            </ul>
+
+            <div id="myTabContent" class="tab-content">
+                <div class="tab-pane fade in active" id="news">
+
+                    <ul>
+                        <li><img src="image/img2.jpg" class="img-responsive"></li>
+                        <li>[哈尔滨]梁静茹.你的名字是爱情演唱会</li>
+                        <li>--------------------------------------</li>
+                        <li>[太原]蔡依林2016PLAY世界巡回演唱会</li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <!--第三行是一个占12列的广告页面-->
+        <div class="col-md-12">
+            <img src="image/ad1.jpg" class="img-responsive">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-10 col-xs-12" id="tworow">
+            <ul id="myTab1" class="nav nav-tabs">
+                <li class="active"><a href="#news" data-toggle="tab" id="one1">
+                    演唱会</a>
+                </li>
+                <li><a href="#play" data-toggle="tab">体育赛事</a></li>
+                <li><a href="#war" data-toggle="tab">
+                    舞台剧</a>
+                </li>
+                <li><a href="#society" data-toggle="tab">儿童亲子</a></li>
+                <li><a href="#phy" data-toggle="tab">
+                    音乐会</a>
+                </li>
+                <li><a href="#act" data-toggle="tab">展览活动</a></li>
+
+
+            </ul>
+
+            <div id="myTabContent1" class="tab-content">
+                <div class="tab-pane fade in active" id="news1">
+
+                    <!--第四行选项卡有内容的右侧大概占三分的历历在目-->
+                    <div class="row" id="tworowcol">
+                        <div class="col-md-3 col-xs-6">
+                            <img src="image/9.jpg" class="img-responsive">
+                            <p>[苏州]2016迷笛电子音乐节<br><strong style="font-size: 20px" >180</strong>元起</p>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <img src="image/10.jpg" class="img-responsive">
+                            <p>[深圳]逃跑计划2016巡回演唱会深圳站<br><strong style="font-size: 20px">180</strong>元起</p>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <img src="image/11.jpg" class="img-responsive">
+                            <p>[北京]陈奕迅 ANOTHER EASON'S LIFE演唱会北京站<br><strong style="font-size: 20px">380</strong>元起</p>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <img src="image/12.jpg" class="img-responsive">
+                            <p>[青岛]周杰伦2016世界巡回演唱会青岛站(即将开售)<br><strong style="font-size: 20px">380</strong>元起</p>
+                        </div>
+
+                        <div class="col-md-3 col-xs-6">
+                            <img src="image/13.jpg" class="img-responsive">
+                            <p>[太原]周杰伦2016世界巡回演唱会太原站(预售) 280元起<br><strong style="font-size: 20px">280</strong>元起</p>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <img src="image/14.jpg" class="img-responsive">
+                            <p>[太原]2016 李荣浩「有 理想」世界巡回演唱会-太原站<br><strong style="font-size: 20px">280</strong>元起</p>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <img src="image/15.jpg" class="img-responsive">
+                            <p>[深圳]徐佳莹“日全蚀”深圳演唱会<br><strong style="font-size: 20px">280</strong>元起</p>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <img src="image/16.jpg" class="img-responsive">
+                            <p>[太原]2016刘若英"Renext 我敢"世界巡回演唱会太原站<br><strong style="font-size: 20px">380</strong>元起</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <div class="col-md-2 col-xs-12">
+
+
+            <ul class="list-group">
+                <li class="list-group-item"  style="background-color: rgba(98,205,233,0.95) ">
+                    <div>历历在目</div></li>
+                <li class="list-group-item"><img src="image/img4.jpg">[天津]天津中华曲苑相声专场
+
+
+                <li class="list-group-item"><img src="image/img5.jpg">[深圳]刘老根大舞台深圳站
+
+                </li>
+                <li class="list-group-item"><img src="image/img6.gif">[长沙]大兵笑工场相声晚会
+
+                </li>
+                <li class="list-group-item"><img src="image/img4.jpg">[天津]天津中华曲苑相声专场
+
+                </li>
+                <li class="list-group-item">
+                    查看今日全部演出
+
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!--第五行场馆推荐和热销榜单-->
+
+    <div class="row">
+        <div class="col-md-9 col-xs-12">
+            <div class="col-md-2"><strong>场馆推荐</strong></div><br>
+            <br><br>
+
+        </div>
+        <div class="row" id="row">
+            <div class="col-md-4 col-xs-12">
+                <div class="">
+                    <img src="image/img7.jpg" class="img-responsive">
+                    <div class="caption">
+                        <p><strong>近期演出：</strong><br><br>
+                            [北京]恒源祥戏剧出品大型原创音乐剧《犹太人在上海》<br><br>
+                            [北京]沪语话剧《永远的尹雪艳》<br><br>
+                            [北京]恒源祥戏剧出品原创话剧《大商海》<br><br>
+                            [北京]百老汇经典音乐剧《音乐之声》中文版
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">5
+                <div class="">
+                    <img src="image/img8.jpg" class="img-responsive">
+                    <div class="caption">
+                        <p><strong>近期演出：</strong><br>
+                            [北京]2016如果 田馥甄巡回演唱会PLUS北京站(售罄)
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <span><strong>热销榜单</strong></span>
+                <ul class="list-group">
+
+                    <li class="list-group-item"><img src="image/img9.jpg">2016年1月1日~12月31日 [华特迪士尼大剧院]
+                    </li>
+                    <li class="list-group-item">[北京]陈奕迅 ANOTHER EASON'S LIFE
+
+                    </li>
+                    <li class="list-group-item">[深圳]逃跑计划2016巡回演唱会深圳站
+
+                    </li>
+                    <li class="list-group-item">[北京]BJCC北京漫控潮流博览会
+
+                    </li>
+                    <li class="list-group-item">
+                        [贵阳]陈奕迅 ANOTHER EASON'S LIFE演唱会贵阳站
+                    </li>
+                    <li class="list-group-item">
+                        [太原]2016岳云鹏相声专场太原站
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row" style="background-color:rgba(23,15,22,0.95)">
+        <div class="col-md-4 col-xs-12" style="margin-top: 5px">
+            <img src="image/logoMsg.png"  class="navbar-brand"><span>微信电影票官网</span><br>
+            在线占好座，覆盖影院全国第一
+        </div>
+        <div class="col-md-4 col-xs-12" style="margin-top: 5px">
+            <img src="image/phoneIcon.png"  class="navbar-brand"><span>微信电影票官网</span><br>
+            在线占好座，覆盖影院全国第一
+        </div>
+        <div class="col-md-4 col-xs-12" style="margin-top: 5px">
+            <img src="image/f_wx.png"  class="navbar-brand"><img src="image/f_wpr.png" class="navbar-brand"><span>微信电影票官网</span><br>
+            在线占好座，覆盖影院全国第一
+        </div>
+        <div class="col-md-5 col-xs-12 col-md-offset-3" style="margin-top: 5px">
+            @2015北京微影时代科技有限公司版权所有　　京ICP备14034406号-2
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--最下面的尾部-->
+<script src="js/jquery-1.12.4.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
